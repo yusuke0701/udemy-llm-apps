@@ -1,18 +1,37 @@
 import streamlit as st
 import json
-import time
+from openai import OpenAI
+
 
 f = open("static/json/recipe.json", "r", encoding="UTF-8")
 SAMPLE_JSON = f.read()
+f.close()
+
+f = open("static/prompt/recipe.txt", "r", encoding="UTF-8")
+PROMPT_TEMPLATE = f.read()
 f.close()
 
 st.title("レシピ生成AI")
 
 dish = st.text_input(label="料理名")
 
+client = OpenAI()
+
 if dish:
     with st.spinner(text="生成中..."):
-        time.sleep(3)
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {
+                    "role": "user",
+                    "content": PROMPT_TEMPLATE.format(
+                        sample_json=SAMPLE_JSON, dish=dish
+                    ),
+                }
+            ],
+        )
+        st.write(response)
+
         recipe = json.loads(SAMPLE_JSON)
 
         st.write("## 材料")
