@@ -12,6 +12,9 @@ openai = "^1.16.0"
 pydantic = "1.10.12"
 stability-sdk = "^0.8.5"
 langchain = "^0.1.14"
+llama-index = "^0.10.26"
+pypdf = "^4.1.0"
+nltk = "^3.8.1"
 
 
 [build-system]
