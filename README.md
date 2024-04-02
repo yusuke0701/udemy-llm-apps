@@ -57,3 +57,9 @@ Function calling の「JSON形式で引数を受け取れる「動作を、「LL
 ### pydantic
 
 JSON文字列を、Pythonのクラスとして定義できる。
+
+### Stable Diffusion
+
+自然言語から画像を生成する機械学習モデル。
+
+公開されているモデルをダウンロードして使用するか、Stability AI 社の DreamStudio といったWebサービスで使用できる。
