@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "udemy-llm-apps"
+version = "0.1.0"
+description = ""
+authors = ["中島 悠輔 <nakashima.yusuke@headwaters.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "1.25.0"
+openai = "^1.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

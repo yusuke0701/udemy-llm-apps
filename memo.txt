@@ -1,0 +1,22 @@
+1. ChatGPTのAPIは過去のやりとりを、assistant とかで渡しておく。APIは過去のやりとりを保持する機能はない。
+
+from openai import OpenAI
+client = OpenAI()
+
+response = client.chat.completions.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Who won the world series in 2020?"},
+    {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+    {"role": "user", "content": "Where was it played?"}
+  ]
+)
+
+2. 利用するトークンをカウントできる => tiktoken
+https://note.com/npaka/n/ncb4864df31c9
+
+Function calling Chat completions API の新機能
+利用可能な関数をLLMに伝えておくと、LLMが関数を使うかどうか判断してくれる機能
+
+
