@@ -97,3 +97,7 @@ OCRと組み合わせることで、画像から属性を抽出することも�
 LlamaIndex は、LLMを外部データに接続して使うためのフレームワーク。
 
 LLM -> LlamaIndex -> Local File(PDFなど), Notion, Google Docs, Wikipedia
+
+### AIエージェント
+
+目的に対して、自律的に判断して動くプログラム。
