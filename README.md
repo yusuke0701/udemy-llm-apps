@@ -101,3 +101,21 @@ LLM -> LlamaIndex -> Local File(PDFなど), Notion, Google Docs, Wikipedia
 ### AIエージェント
 
 目的に対して、自律的に判断して動くプログラム。
+
+### Make
+
+#### 概要
+
+Webサービスと、Webサービスを連携できる IPaaS の一つ。
+
+似たようなサービスとして、IFTTT, Zapier などがある。
+
+### シナリオ
+
+Webサービスをシナリオとして、連携する。
+
+コーディングなしでできる。
+
+### LLMとMakeの連携
+
+LLMが生成した指示をもとに、MakeのWebhookを呼び出すこともできる。
