@@ -8,6 +8,10 @@
 
 ## 個人メモ
 
+### zip化コマンド
+
+`zip -r udemy-llm-apps/ udemy-llm-apps`
+
 ### ChatGPTのAPIは過去のやりとりを保持する機能はない
 
 ChatGPTのAPIは過去のやりとりは、APIの messages 引数に含めることで、やりとりを保持することができる。
