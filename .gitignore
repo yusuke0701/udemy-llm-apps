@@ -1,2 +1,4 @@
 /100knocks-preprocess/
 sample.db
+.streamlit/secrets.toml
+*:Zone.Identifier
